@@ -25,6 +25,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deployment Status
 
-This App on Netlify
+This App has been deployed on Netlify
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6760e99c-3e82-4107-90ce-2ddc1d6351b4/deploy-status)](https://app.netlify.com/sites/watsapan/deploys)
