@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Head from 'next/head'
 import PhoneInput from 'react-phone-input-2'
+import Meta from '@components/meta'
 
 export default function Home() {
 	const [number, setNumber] = useState(null)
@@ -13,10 +13,7 @@ export default function Home() {
 
 	return (
 		<div className='container home'>
-			<Head>
-				<title>Watsapan</title>
-				<link rel='icon' href='/favicon.ico' />
-			</Head>
+			<Meta />
 
 			<main className='home__main'>
 				<div>Masukan No Whatsapp</div>
