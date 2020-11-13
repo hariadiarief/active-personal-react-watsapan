@@ -12,16 +12,16 @@ export default function Home() {
 	}
 
 	return (
-		<div className='container'>
+		<div className='container home'>
 			<Head>
 				<title>Watsapan</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<main className=''>
-				<span>Masukan No Whatsapp</span>
+			<main className='home__main'>
+				<div>Masukan No Whatsapp</div>
 
-				<form onSubmit={(event) => onSumbmit(event)}>
+				<form className='home__main__form' onSubmit={(event) => onSumbmit(event)}>
 					<PhoneInput
 						country={'id'}
 						defaultMask={'...-....-....'}
@@ -31,20 +31,19 @@ export default function Home() {
 						value={number}
 						onChange={(phone) => {
 							setNumber(phone)
-							if (number?.length >= 11) {
+							if (phone?.length >= 11) {
 								setisDisableToChat(false)
 							} else {
 								setisDisableToChat(true)
 							}
 						}}
 					/>
-					<button disabled={isDisableToChat} type='submit'>
+					<button className={`home__main__submit${isDisableToChat ? '--disabled' : '--primary'}`} disabled={isDisableToChat} type='submit'>
 						Chat Now
 					</button>
 				</form>
 			</main>
-
-			<footer className=''></footer>
+			<footer className='home__footer'>© Masagus Hariadi Arief 2020 all rights reserved</footer>
 		</div>
 	)
 }
