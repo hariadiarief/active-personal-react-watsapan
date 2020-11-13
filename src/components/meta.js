@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 const defaultTitle = 'Watsapan'
 const defaultThumbnail =
-	'https://images.unsplash.com/photo-1599382103240-5f2a57137d28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80'
+	'https://images.unsplash.com/photo-1599382103240-5f2a57137d28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&h=375&q=80'
 const defaultURL = 'https://watsapan.netlify.app/'
 const defaultKeyword = 'whatsapp, watsapan'
 
