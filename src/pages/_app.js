@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { Fragment } from 'react'
 
 import '../styles/main.scss'
+// import 'react-phone-input-2/lib/style.css'
+import 'react-phone-input-2/lib/material.css'
 
 function MyApp({ Component, pageProps }) {
 	return (
