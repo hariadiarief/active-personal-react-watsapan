@@ -13,13 +13,13 @@
 
 .home__main {
     margin-top: -100px;
-    @include card($width:fit-content);
 
+    @include card($width:fit-content);
 
     @include for-size(phone) {
         border: none;
         box-shadow: none;
-        height: 80%;
+        margin-top: unset;
     }
 
     >div:first-child {
@@ -30,18 +30,16 @@
     &__form {
         display: flex;
         flex-direction: column;
-
-        @include for-size(phone) {
-            height: 100%;
-        }
     }
 
     &__submit {
         margin-top: 18px;
         align-self: flex-end;
-        padding: 8px 12px;
+        padding: 8px;
         border-radius: 8px;
         width: 100%;
+        font-size: 20px;
+        font-weight: 300;
     }
 
     &__submit--primary {
